@@ -1,0 +1,78 @@
+.modal-dialog {
+  font-family: "Futura Md BT";
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  .modal-content {
+    border: none !important;
+    background-color: transparent;
+    background-image: url("../../assets/img/menu/ruedaMenu.png");
+    background-size: 1000px 600px;
+    background-repeat: no-repeat;
+    background-position: -250px -50px;
+    width: 1000px;
+    .fila {
+      position: relative;
+      font-family: "Futura Md Bold";
+      &--menu {
+        top: 80px;
+        left: 0px;
+        color: black;
+        h3 {
+          font-family: "Futura Heavy";
+          text-align: center;
+          font-size: 1.8rem;
+        }
+        h4 {
+          font-family: "Futura Book";
+          font-size: 1.3rem;
+          text-align: center;
+        }
+      }
+      &--cerrar {
+        top: -10px;
+        left: 155px;
+        border-radius: 50%;
+        img {
+          height: 40px;
+          width: 40px;
+        }
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+      &--inicio {
+        top: 130px;
+        left: 85px;
+      }
+      &--proyectos {
+        top: 100px;
+        right: -330px;
+      }
+      &--nosotros {
+        top: 150px;
+        left: 100px;
+      }
+      &--contacto {
+        top: 88px;
+        right: -310px;
+      }
+      &--servicios {
+        top: 180px;
+        right: -205px;
+      }
+      a {
+        font-family: "Futura Bold";
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+      }
+      &--active {
+        a {
+          color: $cyan;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

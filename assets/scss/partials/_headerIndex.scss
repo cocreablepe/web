@@ -1,0 +1,39 @@
+.headerIndex {
+  @media (min-width: 992px) {
+    & {
+      position: absolute;
+    }
+  }
+  &__nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    @media (min-width: 992px) {
+      display: flex;
+      margin-right: 0 !important;
+      align-self: end;
+      flex-direction: column;
+      align-items: end;
+      z-index: 2;
+    }
+    &__circle {
+      @include circle;
+    }
+    &__title {
+      cursor: pointer;
+      z-index: 2;
+      font-family: "Futura Md BT";
+      font-size: 1.5rem;
+      text-align: center;
+      color: #ffffff;
+      @media (min-width: 768px) {
+        & {
+          margin-right: 3rem;
+          width: 6rem;
+        }
+      }
+    }
+  }
+}

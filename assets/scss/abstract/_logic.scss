@@ -1,0 +1,53 @@
+@mixin grillaDer {
+  @media (min-width: 992px) {
+    & {
+      display: grid;
+      grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img3";
+      grid-template-columns: 1.69fr 1.34fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      &__img1 {
+        grid-area: img1;
+      }
+      &__img2 {
+        grid-area: img2;
+      }
+      &__img3 {
+        grid-area: img3;
+      }
+      &__img4 {
+        grid-area: img4;
+      }
+      &__img5 {
+        grid-area: img5;
+      }
+    }
+  }
+}
+
+@mixin circle {
+  cursor: pointer;
+  z-index: 2;
+  width: 100px;
+  height: 80px;
+  @media (min-width: 768px) {
+    & {
+      margin-top: 2rem;
+      margin-right: 3rem;
+    }
+  }
+}
+
+@mixin circle2 {
+  cursor: pointer;
+  z-index: 2;
+  width: 100px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}

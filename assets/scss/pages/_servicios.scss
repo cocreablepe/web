@@ -1,0 +1,97 @@
+.landServicios {
+  background-image: url("../../assets/img/servicios/linea-servicios.png");
+  background-size: 110% 110%;
+  background-position: -1px -4px;
+  @media (min-width: 992px) {
+    & {
+      background-position: 1% 45%;
+    }
+  }
+  &__titulo {
+    h3 {
+      font-family: "Futura Bold";
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 70px;
+      margin-bottom: 50px;
+      margin-left: 50px;
+    }
+  }
+  &__servicio {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+    justify-content: left;
+    @media (min-width: 992px) {
+      & {
+        flex-direction: row;
+        padding: 0 1rem;
+      }
+    }
+    &__boximg {
+      display: flex;
+      justify-content: center;
+      order: 2;
+      @media (min-width: 992px) {
+        & {
+          flex-basis: 32%;
+          order: 1;
+        }
+      }
+    }
+    &__data {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      order: 1;
+      @media (min-width: 992px) {
+        & {
+          flex-basis: 31%;
+          order: 2;
+        }
+      }
+      @media (min-width: 1200px) {
+        & {
+          width: 35rem;
+        }
+      }
+      h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 3rem;
+        padding: 0 0.5rem;
+        font-family: "Futura Bold";
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+      }
+      ul {
+        font-family: "Futura Md BT";
+        list-style: none;
+        padding: 0;
+        li {
+          text-align: center;
+          font-weight: bold;
+          background-color: white;
+          @media (min-width: 992px) {
+            & {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+    img:hover {
+      transform: scale(1.05, 1.05);
+      transition: 0.5s;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+}

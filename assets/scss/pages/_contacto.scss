@@ -1,0 +1,74 @@
+.contacto {
+  font-family: "Futura Bold";
+  @media (min-width: 576px) {
+    & {
+      background-image: url("../../assets/img/contacto/Linea-Contacto2.png");
+      background-repeat: repeat-y;
+      background-size: 120% 120%;
+      background-position: -10rem -3rem;
+    }
+  }
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  @media (min-width: 992px) {
+    & {
+      padding: 10rem 4rem;
+    }
+  }
+
+  &__info {
+    align-self: center;
+    text-align: center;
+    margin: 2rem 0;
+    @media (min-width: 992px) {
+      margin: 0;
+      text-align: start;
+    }
+    &__titulo {
+      font-family: "Futura Heavy";
+      font-size: 2rem;
+      @media (min-width: 992px) {
+        margin-left: 2rem;
+        font-size: 3rem;
+      }
+    }
+    &__subtitulo {
+      font-family: "Futura Md BT";
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      @media (min-width: 992px) {
+        margin-left: 1.5rem;
+        font-size: 2rem;
+      }
+    }
+    &__flex {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: black;
+      }
+      @media (min-width: 992px) {
+        justify-content: flex-start;
+      }
+      &__dato {
+        display: flex;
+        margin-bottom: 0;
+        align-content: center;
+        font-family: "Futura Book";
+        font-size: 1rem;
+        @media (min-width: 992px) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  &__mapa {
+    display: flex;
+    justify-content: center;
+  }
+}

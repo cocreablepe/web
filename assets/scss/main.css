@@ -1,0 +1,1656 @@
+* {
+  font-size: 16px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.col-lg-12 {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("../../assets/fonts/FuturaStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Futura Md BT";
+  src: url("../../assets/fonts/FuturaStd-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Futura Heavy";
+  src: url("../../assets/fonts/FuturaStd-Heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Futura Book";
+  src: url("../../assets/fonts/FuturaStd-Book_0.otf") format("opentype");
+}
+
+@media (min-width: 992px) {
+  .headerIndex {
+    position: absolute;
+  }
+}
+
+.headerIndex__nav {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  .headerIndex__nav {
+    display: flex;
+    margin-right: 0 !important;
+    align-self: end;
+    flex-direction: column;
+    align-items: end;
+    z-index: 2;
+  }
+}
+
+.headerIndex__nav__circle {
+  cursor: pointer;
+  z-index: 2;
+  width: 100px;
+  height: 80px;
+}
+
+@media (min-width: 768px) {
+  .headerIndex__nav__circle {
+    margin-top: 2rem;
+    margin-right: 3rem;
+  }
+}
+
+.headerIndex__nav__title {
+  cursor: pointer;
+  z-index: 2;
+  font-family: "Futura Md BT";
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .headerIndex__nav__title {
+    margin-right: 3rem;
+    width: 6rem;
+  }
+}
+
+.headerSecciones {
+  padding-top: 1rem !important;
+}
+
+.headerSecciones__nav {
+  display: none;
+  z-index: 2;
+  justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .headerSecciones__nav {
+    display: flex;
+  }
+}
+
+.headerSecciones__nav__boximg {
+  display: flex;
+  justify-content: center;
+}
+
+.headerSecciones__nav__boximg img {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.headerSecciones__nav__menu {
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 6%;
+  justify-content: center;
+}
+
+.headerSecciones__nav__menu__circle {
+  cursor: pointer;
+  z-index: 2;
+  width: 100px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.headerSecciones__nav__menu__circle img {
+  width: 80px;
+  height: 80px;
+}
+
+.headerSecciones__nav__menu p {
+  cursor: pointer;
+  z-index: 2;
+  font-family: "Futura Md BT";
+  font-size: 1.5rem;
+  text-align: center;
+  width: 6rem;
+}
+
+.navMobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 1rem;
+  font-family: "Futura Md BT";
+  z-index: 99999;
+}
+
+.navMobile__img {
+  height: 80px;
+  width: 110px;
+}
+
+@media (min-width: 992px) {
+  .navMobile {
+    display: none;
+  }
+}
+
+.modal-dialog {
+  font-family: "Futura Md BT";
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.modal-dialog .modal-content {
+  border: none !important;
+  background-color: transparent;
+  background-image: url("../../assets/img/menu/ruedaMenu.png");
+  background-size: 1000px 600px;
+  background-repeat: no-repeat;
+  background-position: -250px -50px;
+  width: 1000px;
+}
+
+.modal-dialog .modal-content .fila {
+  position: relative;
+  font-family: "Futura Md Bold";
+}
+
+.modal-dialog .modal-content .fila--menu {
+  top: 80px;
+  left: 0px;
+  color: black;
+}
+
+.modal-dialog .modal-content .fila--menu h3 {
+  font-family: "Futura Heavy";
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.modal-dialog .modal-content .fila--menu h4 {
+  font-family: "Futura Book";
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.modal-dialog .modal-content .fila--cerrar {
+  top: -10px;
+  left: 155px;
+  border-radius: 50%;
+}
+
+.modal-dialog .modal-content .fila--cerrar img {
+  height: 40px;
+  width: 40px;
+}
+
+.modal-dialog .modal-content .fila--cerrar:focus {
+  box-shadow: none !important;
+}
+
+.modal-dialog .modal-content .fila--inicio {
+  top: 130px;
+  left: 85px;
+}
+
+.modal-dialog .modal-content .fila--proyectos {
+  top: 100px;
+  right: -330px;
+}
+
+.modal-dialog .modal-content .fila--nosotros {
+  top: 150px;
+  left: 100px;
+}
+
+.modal-dialog .modal-content .fila--contacto {
+  top: 88px;
+  right: -310px;
+}
+
+.modal-dialog .modal-content .fila--servicios {
+  top: 180px;
+  right: -205px;
+}
+
+.modal-dialog .modal-content .fila a {
+  font-family: "Futura Bold";
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.modal-dialog .modal-content .fila--active a {
+  color: #50b8b0;
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 90px;
+}
+
+@media (min-width: 992px) {
+  main {
+    margin-top: 0;
+  }
+}
+
+.hero {
+  height: 80vh;
+  font-family: "Futura Md BT";
+  background-image: url("../../assets/img/index/heroIndex2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    height: auto;
+    background-image: url("../../assets/img/index/heroIndex.jpg");
+  }
+}
+
+.hero img {
+  display: none;
+  vertical-align: top;
+  width: 100%;
+  opacity: 0;
+}
+
+@media (min-width: 992px) {
+  .hero img {
+    display: block;
+  }
+}
+
+.hero__bienvenida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1001;
+}
+
+@media (min-width: 992px) {
+  .hero__bienvenida {
+    margin-top: 22%;
+    position: absolute;
+  }
+}
+
+.hero__bienvenida__titulo {
+  margin-bottom: 2rem;
+  font-family: "Futura Bold";
+  font-size: 2rem;
+  color: #ffb937;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero__bienvenida__titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero__bienvenida__titulo {
+    max-width: 772px;
+    align-self: flex-end;
+    font-size: 3rem;
+  }
+}
+
+.hero__bienvenida__link {
+  text-align: center;
+  align-self: center;
+  color: white;
+  font-family: "Futura Md BT";
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #50b8b0;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .hero__bienvenida__link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero__bienvenida__link {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    margin-right: 15rem;
+  }
+}
+
+.servicios {
+  z-index: 1000;
+  align-content: center;
+  justify-content: center;
+  margin: 0 !important;
+  background-color: #0000001a;
+}
+
+.servicios__tarjeta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+  flex-basis: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .servicios__tarjeta {
+    margin: 1rem 1rem 6rem 1rem;
+    flex-basis: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  .servicios__tarjeta {
+    margin: 0.5rem 0.5rem 2rem 0.5rem;
+    flex-basis: 23%;
+  }
+}
+
+.servicios__tarjeta__titulo {
+  margin-top: 2rem;
+  font-family: "Futura Bold";
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .servicios__tarjeta__titulo {
+    min-height: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .servicios__tarjeta__titulo {
+    min-height: 95px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .servicios__tarjeta__titulo {
+    min-height: 70px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .servicios__tarjeta__titulo {
+    min-height: 50px;
+  }
+}
+
+.servicios__tarjeta__img {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.servicios__tarjeta__img img {
+  max-width: 90% !important;
+}
+
+.servicios__tarjeta__lista {
+  padding: 0 1rem;
+  font-family: "Futura Md BT";
+  text-align: center;
+  list-style: none;
+  margin-bottom: 4rem;
+}
+
+.servicios__tarjeta__lista li {
+  font-size: 1.2rem;
+}
+
+.servicios__tarjeta__offset {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: -6.6rem;
+  align-self: center;
+}
+
+.servicios__tarjeta__offset .circle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: none;
+}
+
+.servicios__tarjeta__offset .circle a {
+  text-decoration: none;
+  color: black;
+  align-self: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.servicios__tarjeta__offset p {
+  font-family: "Futura Bold";
+}
+
+.servicios__tarjeta--1,
+.servicios__tarjeta .circle1 {
+  background-color: #ffb937;
+}
+
+.servicios__tarjeta--2,
+.servicios__tarjeta .circle2 {
+  background-color: #ea7158;
+}
+
+.servicios__tarjeta--3,
+.servicios__tarjeta .circle3 {
+  background-color: #50b8b0;
+}
+
+.servicios__tarjeta--4,
+.servicios__tarjeta .circle4 {
+  background-color: #47a5c5;
+}
+
+.servicios__tarjeta--1 {
+  position: relative;
+  top: -1.5rem;
+}
+
+@media (min-width: 768px) {
+  .servicios__tarjeta--2, .servicios__tarjeta--3, .servicios__tarjeta--4 {
+    position: relative;
+    top: -1.5rem;
+  }
+}
+
+.nosotros {
+  position: relative;
+  background-image: url("../../assets/img/index/Linea-Homepage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  background-position: -18rem 45rem;
+}
+
+.nosotros:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 15%;
+  z-index: 999;
+  opacity: 1;
+  background-color: #0000001a;
+}
+
+@media (min-width: 576px) {
+  .nosotros {
+    background-position: -14rem 43rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nosotros {
+    background-position: -14rem 40rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .nosotros {
+    background-position: 0rem 20rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nosotros {
+    background-position: 0rem 12rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .nosotros {
+    background-position: 0rem 10rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .nosotros {
+    background-position: 0rem 4rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  .nosotros {
+    background-position: 0rem 0rem;
+  }
+}
+
+@media (min-width: 2400px) {
+  .nosotros {
+    background-position: 0 -2rem;
+  }
+}
+
+.nosotros__cuadrados {
+  position: absolute;
+  top: 18%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .nosotros__cuadrados {
+    top: 13.2%;
+  }
+}
+
+.nosotros__cuadrados__cuadrado {
+  height: 30px;
+  width: 30px;
+}
+
+.nosotros__cuadrados__cuadrado--1 {
+  background-color: #ffb937;
+}
+
+.nosotros__cuadrados__cuadrado--2 {
+  background-color: #50b8b0;
+}
+
+.nosotros__cuadrados__cuadrado--3 {
+  background-color: #47a5c5;
+}
+
+.nosotros__cuadrados__cuadrado--4 {
+  background-color: #ea7158;
+}
+
+.nosotros__rueda {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  z-index: 1001;
+}
+
+@media (min-width: 992px) {
+  .nosotros__rueda {
+    display: none;
+  }
+}
+
+.nosotros__rueda img {
+  justify-self: center;
+}
+
+@media (min-width: 500px) {
+  .nosotros__rueda img {
+    max-width: 400px !important;
+  }
+}
+
+.nosotros__integrantes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+@media (min-width: 992px) {
+  .nosotros__integrantes {
+    position: relative;
+    min-height: 1092.66px;
+    z-index: 1000;
+    background-image: url("../../assets/img/index/ruedaindex2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nosotros__integrantes {
+    background-size: 70%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nosotros__integrantes {
+    background-size: 75%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .nosotros__integrantes {
+    background-size: 70%;
+  }
+}
+
+.nosotros__integrantes__integrante {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .nosotros__integrantes__integrante {
+    width: 20rem;
+  }
+}
+
+.nosotros__integrantes__integrante img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.nosotros__integrantes__integrante__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+}
+
+.nosotros__integrantes__integrante__data h4 {
+  font-family: "Futura Bold";
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.nosotros__integrantes__integrante__data h4 a {
+  margin-left: 0.8rem;
+  color: transparent;
+}
+
+.nosotros__integrantes__integrante__data h4 a i {
+  color: #47a5c5;
+}
+
+.nosotros__integrantes__integrante__data ul {
+  font-family: "Futura Book";
+  text-align: center;
+  padding: 0;
+  font-size: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+@media (min-width: 992px) {
+  .nosotros__integrantes__integrante__data ul {
+    max-width: 200px;
+  }
+}
+
+.nosotros__integrantes__integrante__data ul li {
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .nosotros__integrantes__integrante {
+    max-width: 25rem;
+    position: relative;
+  }
+}
+
+.nosotros__integrantes__integrante--1 {
+  order: 2;
+}
+
+.nosotros__integrantes__integrante--2 {
+  order: 1;
+}
+
+.nosotros__integrantes__integrante--3 {
+  order: 3;
+}
+
+@media (min-width: 992px) {
+  .nosotros__integrantes__integrante {
+    position: absolute;
+  }
+  .nosotros__integrantes__integrante--1 {
+    top: 30%;
+    right: 13vw;
+  }
+  .nosotros__integrantes__integrante--2 {
+    left: 13vw;
+    top: 30%;
+  }
+  .nosotros__integrantes__integrante--3 {
+    align-self: center;
+    min-width: 90vw;
+    top: 63%;
+  }
+  .nosotros__integrantes__integrante--3 h4 {
+    width: 15rem;
+    flex-basis: 40%;
+  }
+  .nosotros__integrantes__integrante--3 .nosotros__integrantes__integrante__data {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nosotros__integrantes__integrante--1 {
+    top: 31.5%;
+    right: 17.5vw;
+  }
+  .nosotros__integrantes__integrante--2 {
+    top: 31.5%;
+    left: 17.5vw;
+  }
+  .nosotros__integrantes__integrante--3 {
+    top: 65%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nosotros__integrantes__integrante--1 {
+    top: 28%;
+    right: 20vw;
+  }
+  .nosotros__integrantes__integrante--2 {
+    top: 28%;
+    left: 20vw;
+  }
+  .nosotros__integrantes__integrante--3 {
+    top: 67%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .nosotros__integrantes__integrante--1 {
+    top: 28%;
+    right: 22vw;
+  }
+  .nosotros__integrantes__integrante--2 {
+    top: 28%;
+    left: 22vw;
+  }
+  .nosotros__integrantes__integrante--3 {
+    top: 68%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .nosotros__integrantes__integrante--1 {
+    right: 23vw;
+  }
+  .nosotros__integrantes__integrante--2 {
+    left: 23vw;
+  }
+  .nosotros__integrantes__integrante--3 {
+    top: 72%;
+  }
+}
+
+@media (min-width: 2200px) {
+  .nosotros__integrantes__integrante--1 {
+    top: 22%;
+    right: 25vw;
+  }
+  .nosotros__integrantes__integrante--2 {
+    top: 22%;
+    left: 25vw;
+  }
+  .nosotros__integrantes__integrante--3 {
+    top: 76%;
+  }
+}
+
+@media (min-width: 2400px) {
+  .nosotros__integrantes__integrante--1 {
+    right: 26vw;
+  }
+  .nosotros__integrantes__integrante--2 {
+    left: 26vw;
+  }
+  .nosotros__integrantes__integrante--3 {
+    top: 80%;
+  }
+}
+
+.nosotros .proyectos__titulo {
+  font-family: "Futura Bold";
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 4rem;
+}
+
+.nosotros .proyectos__titulo h2 {
+  text-align: center;
+}
+
+.nosotros .proyectos__titulo h3 {
+  font-family: "Futura Md BT";
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .nosotros .proyectos__titulo {
+    margin-bottom: 30px;
+    padding-left: 12rem;
+  }
+  .nosotros .proyectos__titulo h2 {
+    text-align: start;
+  }
+  .nosotros .proyectos__titulo h3 {
+    text-align: start;
+  }
+}
+
+@media (min-width: 992px) {
+  .nosotros .proyectos__titulo {
+    margin-bottom: 30px;
+    padding-left: 16rem;
+  }
+  .nosotros .proyectos__titulo h2 {
+    font-size: 2rem;
+  }
+  .nosotros .proyectos__titulo h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nosotros .proyectos__titulo {
+    padding-left: 20rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nosotros .proyectos__titulo {
+    padding-left: 25rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .nosotros .proyectos__titulo {
+    padding-left: 30rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .nosotros .proyectos__titulo {
+    padding-top: 6rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  .nosotros .proyectos__titulo {
+    padding-top: 9rem;
+  }
+}
+
+@media (min-width: 2400px) {
+  .nosotros .proyectos__titulo {
+    padding-top: 20rem;
+  }
+}
+
+.nosotros .proyectos__carrusel .carousel {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.nosotros .proyectos__carrusel .carousel .carousel-indicators .indicador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border-width: inherit;
+  background-color: #ffb937;
+}
+
+.nosotros .proyectos__carrusel .carousel .carousel-inner {
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .nosotros .proyectos__carrusel .carousel .carousel-inner .carousel-item {
+    height: 500px;
+  }
+  .nosotros .proyectos__carrusel .carousel .carousel-inner .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nosotros .proyectos__carrusel .carousel .carousel-inner .carousel-item {
+    height: 800px;
+  }
+  .nosotros .proyectos__carrusel .carousel .carousel-inner .carousel-item img {
+    min-height: 800px;
+  }
+}
+
+.nosotros .proyectos__carrusel .carousel .carousel-inner .botonCarousel {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nosotros .proyectos__carrusel .carousel .carousel-inner .botonCarousel {
+    display: block;
+    position: absolute;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    padding: 0.5rem 2rem;
+    top: 0;
+    right: 12%;
+    pointer-events: auto;
+    color: white;
+    background-color: #50b8b0;
+    font-family: "Futura Md BT";
+    font-size: 1.4rem;
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 992px) {
+  .landNosotros {
+    background-image: url("../../assets/img/nosotros/Linea-nosotros.png");
+    background-repeat: repeat-y;
+    background-position: -30rem 13rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .landNosotros {
+    background-position: -28rem 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landNosotros {
+    background-position: -25rem 7rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .landNosotros {
+    background-position: -15rem 5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .landNosotros {
+    background-position: -5rem 2rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .landNosotros {
+    background-size: cover;
+    background-position: 0rem 6rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .landNosotros {
+    background-position: 0rem 0rem;
+  }
+}
+
+@media (min-width: 2100px) {
+  .landNosotros {
+    background-position: 0rem -5rem;
+  }
+}
+
+@media (min-width: 2300px) {
+  .landNosotros {
+    background-position: 0rem 20%;
+  }
+}
+
+@media (min-width: 2400px) {
+  .landNosotros {
+    background-position: 0rem 25%;
+  }
+}
+
+.landNosotros__hero__boximg {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  padding: 0;
+}
+
+.landNosotros__hero__boximg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.landNosotros__data {
+  margin: 1.3rem;
+}
+
+@media (min-width: 576px) {
+  .landNosotros__data {
+    margin: 4rem;
+  }
+}
+
+.landNosotros__data__titulo {
+  font-family: "Futura Heavy";
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .landNosotros__data__titulo {
+    font-size: 2.5rem;
+  }
+}
+
+.landNosotros__data__parrafo {
+  font-family: "Futura Md BT";
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .landNosotros__data__parrafo {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .landNosotros__data__parrafo {
+    margin-left: 55px;
+  }
+}
+
+.landNosotros__equipo__titulo {
+  font-family: "Futura Bold";
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 1800px) {
+  .landNosotros__equipo__titulo {
+    margin-top: 150px;
+  }
+}
+
+@media (min-width: 2300px) {
+  .landNosotros__equipo__titulo {
+    margin-top: 200px;
+  }
+}
+
+.landNosotros__equipo__integrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 4rem;
+}
+
+@media (min-width: 768px) {
+  .landNosotros__equipo__integrante {
+    min-height: 500px;
+    padding: 2rem 2rem;
+  }
+}
+
+.landNosotros__equipo__integrante .integrante__cajaImagen {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+}
+
+.landNosotros__equipo__integrante .integrante__cajaImagen img {
+  border-radius: 50%;
+  border: solid #efa721;
+}
+
+@media (min-width: 1400px) {
+  .landNosotros__equipo__integrante .integrante__cajaImagen {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.landNosotros__equipo__integrante .integrante__data {
+  display: flex;
+  flex-direction: column;
+}
+
+.landNosotros__equipo__integrante .integrante__data__nombre {
+  font-family: "Futura Bold";
+  text-align: center;
+  padding-top: 15px;
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  .landNosotros__equipo__integrante .integrante__data__nombre {
+    min-height: 140px;
+  }
+}
+
+@media (min-width: 992px) {
+  .landNosotros__equipo__integrante .integrante__data__nombre {
+    min-height: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landNosotros__equipo__integrante .integrante__data__nombre {
+    min-height: 100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .landNosotros__equipo__integrante .integrante__data__nombre {
+    min-height: 80px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .landNosotros__equipo__integrante .integrante__data__nombre {
+    min-height: auto;
+  }
+}
+
+.landNosotros__equipo__integrante .integrante__data__cv {
+  font-family: "Futura Md BT";
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .landNosotros__equipo__integrante .integrante__data__cv {
+    min-height: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .landNosotros__equipo__integrante .integrante__data__cv {
+    min-height: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landNosotros__equipo__integrante .integrante__data__cv {
+    min-height: 50px;
+  }
+}
+
+.landNosotros__equipo__integrante .integrante__linkedin img {
+  width: 40px;
+  height: 40px;
+}
+
+.landServicios {
+  background-image: url("../../assets/img/servicios/linea-servicios.png");
+  background-size: 110% 110%;
+  background-position: -1px -4px;
+}
+
+@media (min-width: 992px) {
+  .landServicios {
+    background-position: 1% 45%;
+  }
+}
+
+.landServicios__titulo h3 {
+  font-family: "Futura Bold";
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+.landServicios__servicio {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 3rem;
+  margin-bottom: 2rem;
+  justify-content: left;
+}
+
+@media (min-width: 992px) {
+  .landServicios__servicio {
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+}
+
+.landServicios__servicio__boximg {
+  display: flex;
+  justify-content: center;
+  order: 2;
+}
+
+@media (min-width: 992px) {
+  .landServicios__servicio__boximg {
+    flex-basis: 32%;
+    order: 1;
+  }
+}
+
+.landServicios__servicio__data {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  order: 1;
+}
+
+@media (min-width: 992px) {
+  .landServicios__servicio__data {
+    flex-basis: 31%;
+    order: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .landServicios__servicio__data {
+    width: 35rem;
+  }
+}
+
+.landServicios__servicio__data h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0 0.5rem;
+  font-family: "Futura Bold";
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.landServicios__servicio__data ul {
+  font-family: "Futura Md BT";
+  list-style: none;
+  padding: 0;
+}
+
+.landServicios__servicio__data ul li {
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+}
+
+@media (min-width: 992px) {
+  .landServicios__servicio__data ul li {
+    font-size: 1.2rem;
+  }
+}
+
+.landServicios__servicio img:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.proyectos__titulo {
+  font-family: "Futura Heavy";
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.proyectos__proyecto {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-family: "Futura Bold";
+}
+
+.proyectos__proyecto__descripcion {
+  padding: 1rem;
+  font-family: "Futura Md BT";
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .proyectos__proyecto__descripcion {
+    font-size: 1.5rem;
+  }
+}
+
+.proyectos__proyecto__titulo {
+  align-self: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 992px) {
+  .proyectos__proyecto__titulo {
+    width: 50%;
+  }
+}
+
+.proyectos__proyecto__titulo--amarillo {
+  background-color: #ffb937;
+}
+
+.proyectos__proyecto__titulo--rojo {
+  background-color: #ea7158;
+}
+
+.proyectos__proyecto__titulo--cyan {
+  background-color: #50b8b0;
+}
+
+.proyectos__proyecto__titulo--celeste {
+  background-color: #47a5c5;
+}
+
+.proyectos__proyecto__lista {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .proyectos__proyecto__grillaDer {
+    display: grid;
+    grid-template-areas: "img1 img2 img3" "img4 img5 img3";
+    grid-template-columns: 1.69fr 1.34fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .proyectos__proyecto__grillaDer__img1 {
+    grid-area: img1;
+  }
+  .proyectos__proyecto__grillaDer__img2 {
+    grid-area: img2;
+  }
+  .proyectos__proyecto__grillaDer__img3 {
+    grid-area: img3;
+  }
+  .proyectos__proyecto__grillaDer__img4 {
+    grid-area: img4;
+  }
+  .proyectos__proyecto__grillaDer__img5 {
+    grid-area: img5;
+  }
+}
+
+.proyectos__proyecto__grillaDer .img2 {
+  width: 100% !important;
+}
+
+.proyectos img:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contacto {
+  font-family: "Futura Bold";
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 576px) {
+  .contacto {
+    background-image: url("../../assets/img/contacto/Linea-Contacto2.png");
+    background-repeat: repeat-y;
+    background-size: 120% 120%;
+    background-position: -10rem -3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contacto {
+    padding: 10rem 4rem;
+  }
+}
+
+.contacto__info {
+  align-self: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+@media (min-width: 992px) {
+  .contacto__info {
+    margin: 0;
+    text-align: start;
+  }
+}
+
+.contacto__info__titulo {
+  font-family: "Futura Heavy";
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  .contacto__info__titulo {
+    margin-left: 2rem;
+    font-size: 3rem;
+  }
+}
+
+.contacto__info__subtitulo {
+  font-family: "Futura Md BT";
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  .contacto__info__subtitulo {
+    margin-left: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+.contacto__info__flex {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.contacto__info__flex:hover {
+  color: black;
+}
+
+@media (min-width: 992px) {
+  .contacto__info__flex {
+    justify-content: flex-start;
+  }
+}
+
+.contacto__info__flex__dato {
+  display: flex;
+  margin-bottom: 0;
+  align-content: center;
+  font-family: "Futura Book";
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .contacto__info__flex__dato {
+    font-size: 1.3rem;
+  }
+}
+
+.contacto__mapa {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  font-family: "Futura Book";
+  background-color: #ffb937;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer__logo__img {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+.footer__contacto {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .footer__contacto {
+    justify-content: flex-end;
+  }
+}
+
+.footer__contacto__titulo {
+  text-align: center;
+  align-self: center;
+  font-family: "Futura Bold";
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .footer__contacto__titulo {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__contacto__data {
+    justify-content: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__contacto__data {
+    border-left: 2px solid;
+  }
+}
+
+.footer__contacto__data--link {
+  margin-bottom: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.footer__contacto__data--link:hover {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .footer__contacto__data--link {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.footer__contacto__data--link i {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer__contacto__data--link i {
+    justify-content: unset;
+  }
+}
+
+.footer__contacto__data--link p {
+  margin-bottom: 0;
+  text-align: center;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .footer__contacto__data--link p {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,656 @@
+main {
+  margin-top: 90px;
+  @media (min-width: 992px) {
+    & {
+      margin-top: 0;
+    }
+  }
+}
+.hero {
+  height: 80vh;
+  font-family: "Futura Md BT";
+  background-image: url("../../assets/img/index/heroIndex2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (min-width: 992px) {
+    & {
+      height: auto;
+      background-image: url("../../assets/img/index/heroIndex.jpg");
+    }
+  }
+  z-index: 1000;
+  img {
+    display: none;
+    vertical-align: top;
+    width: 100%;
+    opacity: 0;
+    @media (min-width: 992px) {
+      & {
+        display: block;
+      }
+    }
+  }
+  &__bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: 992px) {
+      & {
+        margin-top: 22%;
+        position: absolute;
+      }
+    }
+    z-index: 1001;
+    &__titulo {
+      margin-bottom: 2rem;
+      font-family: "Futura Bold";
+      font-size: 2rem;
+      color: $amarillo;
+      text-align: center;
+      @media (min-width: 768px) {
+        & {
+          font-size: 2.5rem;
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          max-width: 772px;
+          align-self: flex-end;
+          font-size: 3rem;
+        }
+      }
+    }
+    &__link {
+      text-align: center;
+      align-self: center;
+      color: white;
+      font-family: "Futura Md BT";
+      font-size: 1rem;
+      text-decoration: none;
+      background-color: $cyan;
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+      @media (min-width: 768px) {
+        & {
+          font-size: 1.2rem;
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          align-self: flex-end;
+          font-size: 1.5rem;
+
+          margin-right: 15rem;
+        }
+      }
+    }
+  }
+}
+
+.servicios {
+  z-index: 1000;
+  align-content: center;
+  justify-content: center;
+  margin: 0 !important;
+  background-color: #0000001a;
+  &__tarjeta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+    flex-basis: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    @media (min-width: 768px) {
+      & {
+        margin: 1rem 1rem 6rem 1rem;
+        flex-basis: 45%;
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        margin: 0.5rem 0.5rem 2rem 0.5rem;
+        flex-basis: 23%;
+      }
+    }
+    &__titulo {
+      margin-top: 2rem;
+      font-family: "Futura Bold";
+      font-size: 1.2rem;
+      text-align: center;
+      @media (min-width: 768px) {
+        & {
+          min-height: 40px;
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          min-height: 95px;
+        }
+      }
+      @media (min-width: 1200px) {
+        & {
+          min-height: 70px;
+        }
+      }
+      @media (min-width: 1300px) {
+        & {
+          min-height: 50px;
+        }
+      }
+    }
+    &__img {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      img {
+        max-width: 90% !important;
+      }
+    }
+    &__lista {
+      padding: 0 1rem;
+      font-family: "Futura Md BT";
+      text-align: center;
+      list-style: none;
+      margin-bottom: 4rem;
+      li {
+        font-size: 1.2rem;
+      }
+    }
+    &__offset {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      bottom: -6.6rem;
+      align-self: center;
+      .circle {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: none;
+        a {
+          text-decoration: none;
+          color: black;
+          align-self: center;
+          font-size: 3rem;
+          font-weight: bold;
+        }
+      }
+      p {
+        font-family: "Futura Bold";
+      }
+    }
+    &--1,
+    .circle1 {
+      background-color: $amarillo;
+    }
+    &--2,
+    .circle2 {
+      background-color: $rojoClaro;
+    }
+    &--3,
+    .circle3 {
+      background-color: $cyan;
+    }
+    &--4,
+    .circle4 {
+      background-color: $celeste;
+    }
+    &--1 {
+      position: relative;
+      top: -1.5rem;
+    }
+    &--2,
+    &--3,
+    &--4 {
+      @media (min-width: 768px) {
+        & {
+          position: relative;
+          top: -1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.nosotros {
+  position: relative;
+  background-image: url("../../assets/img/index/Linea-Homepage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  background-position: -18rem 45rem;
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 15%;
+    z-index: 999;
+    opacity: 1;
+    background-color: #0000001a;
+  }
+  @media (min-width: 576px) {
+    & {
+      background-position: -14rem 43rem;
+    }
+  }
+  @media (min-width: 768px) {
+    & {
+      background-position: -14rem 40rem;
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      background-position: 0rem 20rem;
+    }
+  }
+  @media (min-width: 1400px) {
+    & {
+      background-position: 0rem 12rem;
+    }
+  }
+  @media (min-width: 1800px) {
+    & {
+      background-position: 0rem 10rem;
+    }
+  }
+  @media (min-width: 2000px) {
+    & {
+      background-position: 0rem 4rem;
+    }
+  }
+  @media (min-width: 2200px) {
+    & {
+      background-position: 0rem 0rem;
+    }
+  }
+  @media (min-width: 2400px) {
+    & {
+      background-position: 0 -2rem;
+    }
+  }
+  &__cuadrados {
+    position: absolute;
+    top: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    @media (min-width: 576px) {
+      top: 13.2%;
+    }
+    &__cuadrado {
+      height: 30px;
+      width: 30px;
+      &--1 {
+        background-color: $amarillo;
+      }
+      &--2 {
+        background-color: $cyan;
+      }
+      &--3 {
+        background-color: $celeste;
+      }
+      &--4 {
+        background-color: $rojoClaro;
+      }
+    }
+  }
+  &__rueda {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    z-index: 1001;
+    @media (min-width: 992px) {
+      & {
+        display: none;
+      }
+    }
+    img {
+      justify-self: center;
+      @media (min-width: 500px) {
+        & {
+          max-width: 400px !important;
+        }
+      }
+    }
+  }
+  &__integrantes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    @media (min-width: 992px) {
+      & {
+        position: relative;
+        min-height: 1092.66px;
+        z-index: 1000;
+        background-image: url("../../assets/img/index/ruedaindex2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+      }
+    }
+    @media (min-width: 1200px) {
+      & {
+        background-size: 70%;
+      }
+    }
+    @media (min-width: 1400px) {
+      & {
+        background-size: 75%;
+      }
+    }
+    @media (min-width: 1600px) {
+      & {
+        background-size: 70%;
+      }
+    }
+    &__integrante {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      @media (min-width: 992px) {
+        & {
+          width: 20rem;
+        }
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      &__data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 18rem;
+        h4 {
+          font-family: "Futura Bold";
+          text-align: center;
+          font-size: 1.2rem;
+          a {
+            margin-left: 0.8rem;
+            color: transparent;
+            i {
+              color: #47a5c5;
+            }
+          }
+        }
+        ul {
+          font-family: "Futura Book";
+          text-align: center;
+          padding: 0;
+          font-size: 1rem;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          @media (min-width: 992px) {
+            & {
+              max-width: 200px;
+            }
+          }
+          li {
+            text-decoration: none;
+          }
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          max-width: 25rem;
+          position: relative;
+        }
+      }
+      &--1 {
+        order: 2;
+      }
+      &--2 {
+        order: 1;
+      }
+      &--3 {
+        order: 3;
+      }
+      @media (min-width: 992px) {
+        & {
+          position: absolute;
+          &--1 {
+            top: 30%;
+            right: 13vw;
+          }
+          &--2 {
+            left: 13vw;
+            top: 30%;
+          }
+          &--3 {
+            align-self: center;
+            min-width: 90vw;
+            top: 63%;
+            h4 {
+              width: 15rem;
+              flex-basis: 40%;
+            }
+            .nosotros__integrantes__integrante__data {
+              margin: 0;
+            }
+          }
+        }
+      }
+      @media (min-width: 1200px) {
+        & {
+          &--1 {
+            top: 31.5%;
+            right: 17.5vw;
+          }
+          &--2 {
+            top: 31.5%;
+            left: 17.5vw;
+          }
+          &--3 {
+            top: 65%;
+          }
+        }
+      }
+      @media (min-width: 1400px) {
+        & {
+          &--1 {
+            top: 28%;
+            right: 20vw;
+          }
+          &--2 {
+            top: 28%;
+            left: 20vw;
+          }
+          &--3 {
+            top: 67%;
+          }
+        }
+      }
+      @media (min-width: 1600px) {
+        & {
+          &--1 {
+            top: 28%;
+            right: 22vw;
+          }
+          &--2 {
+            top: 28%;
+            left: 22vw;
+          }
+          &--3 {
+            top: 68%;
+          }
+        }
+      }
+      @media (min-width: 1800px) {
+        & {
+          &--1 {
+            right: 23vw;
+          }
+          &--2 {
+            left: 23vw;
+          }
+          &--3 {
+            top: 72%;
+          }
+        }
+      }
+      @media (min-width: 2200px) {
+        & {
+          &--1 {
+            top: 22%;
+            right: 25vw;
+          }
+          &--2 {
+            top: 22%;
+            left: 25vw;
+          }
+          &--3 {
+            top: 76%;
+          }
+        }
+      }
+      @media (min-width: 2400px) {
+        & {
+          &--1 {
+            right: 26vw;
+          }
+          &--2 {
+            left: 26vw;
+          }
+          &--3 {
+            top: 80%;
+          }
+        }
+      }
+    }
+  }
+  .proyectos {
+    &__titulo {
+      font-family: "Futura Bold";
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      padding-top: 4rem;
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        font-family: "Futura Md BT";
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        & {
+          margin-bottom: 30px;
+          padding-left: 12rem;
+          h2 {
+            text-align: start;
+          }
+          h3 {
+            text-align: start;
+          }
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          margin-bottom: 30px;
+          padding-left: 16rem;
+          h2 {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      @media (min-width: 1200px) {
+        padding-left: 20rem;
+      }
+      @media (min-width: 1400px) {
+        padding-left: 25rem;
+      }
+      @media (min-width: 1600px) {
+        padding-left: 30rem;
+      }
+      @media (min-width: 1800px) {
+        padding-top: 6rem;
+      }
+      @media (min-width: 2200px) {
+        padding-top: 9rem;
+      }
+      @media (min-width: 2400px) {
+        padding-top: 20rem;
+      }
+    }
+    &__carrusel {
+      .carousel {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        .carousel-indicators {
+          .indicador {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border-width: inherit;
+            background-color: #ffb937;
+          }
+        }
+        .carousel-inner {
+          border-radius: 10px;
+          @media (min-width: 992px) {
+            & {
+              .carousel-item {
+                height: 500px;
+                img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  min-height: 500px;
+                }
+              }
+            }
+          }
+          @media (min-width: 1400px) {
+            .carousel-item {
+              height: 800px;
+              img {
+                min-height: 800px;
+              }
+            }
+          }
+          .botonCarousel {
+            display: none;
+            @media (min-width: 768px) {
+              & {
+                display: block;
+                position: absolute;
+                margin-top: 1rem;
+                margin-right: 2rem;
+                padding: 0.5rem 2rem;
+                top: 0;
+                right: 12%;
+                pointer-events: auto;
+                color: white;
+                background-color: $cyan;
+                font-family: "Futura Md BT";
+                font-size: 1.4rem;
+                z-index: 1000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

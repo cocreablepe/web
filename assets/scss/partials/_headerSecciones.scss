@@ -1,0 +1,39 @@
+.headerSecciones {
+  padding-top: 1rem !important;
+  &__nav {
+    display: none;
+    z-index: 2;
+    justify-content: space-between;
+    @media (min-width: 992px) {
+      display: flex;
+    }
+    &__boximg {
+      display: flex;
+      justify-content: center;
+      img {
+        display: flex;
+        justify-content: center;
+        max-width: 200px;
+      }
+    }
+    &__menu {
+      width: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 6%;
+      justify-content: center;
+      &__circle {
+        @include circle2;
+      }
+      p {
+        cursor: pointer;
+        z-index: 2;
+        font-family: "Futura Md BT";
+        font-size: 1.5rem;
+        text-align: center;
+        width: 6rem;
+      }
+    }
+  }
+}

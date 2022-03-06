@@ -1,0 +1,91 @@
+.footer {
+  font-family: "Futura Book";
+  background-color: #ffb937;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    &__img {
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      float: left;
+    }
+  }
+  &__contacto {
+    display: flex;
+    justify-content: center;
+    @media (min-width: 768px) {
+      & {
+        justify-content: flex-end;
+      }
+    }
+    &__titulo {
+      text-align: center;
+      align-self: center;
+      font-family: "Futura Bold";
+      font-size: 2rem;
+      font-weight: bold;
+      @media (min-width: 768px) {
+        & {
+          margin-right: 2rem;
+        }
+      }
+    }
+    &__data {
+      @media (min-width: 768px) {
+        & {
+          justify-content: unset;
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          border-left: 2px solid;
+        }
+      }
+      &--link {
+        margin-bottom: 0.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: black;
+        }
+        @media (min-width: 768px) {
+          & {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+          }
+        }
+        i {
+          display: flex;
+          justify-content: center;
+          padding: 0.5rem;
+          @media (min-width: 768px) {
+            & {
+              justify-content: unset;
+            }
+          }
+        }
+        p {
+          margin-bottom: 0;
+          text-align: center;
+          align-self: center;
+          @media (min-width: 768px) {
+            & {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}

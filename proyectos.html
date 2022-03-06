@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Co.creable - Proyectos</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Descripción -->
+    <meta
+      name="description"
+      content="Sitio oficial de Co.creable, servicios de arquitectura residencial, paisajista y comercial, dirección de proyectos y consultoría, sección Proyectos."
+    />
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="arquitectura, arquitecto, arquitectos, paisajismo, proyecto, residencial, servicios, servicio, ecológico, equipo, innovación, ecología, diseño, planificación urbana, diseño sostenible, diseño interiores, diseño arquitectónico, nautilus, tupay, eco-house, parque la estancia"
+    />
+    <!-- Favicon Co.creable -->
+    <link rel="icon" href="./assets/img/favicon/logo.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Own css -->
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="container-fluid headerSecciones">
+      <!-- Nav Mobile -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navMobile">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              class="img-fluid navMobile__img"
+              src="./assets/img/footer/logococreable2.png"
+              alt="Logo Co.creable"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Nav screen -->
+      <nav class="row headerSecciones__nav">
+        <div class="col-6 col-md-4 headerSecciones__nav__boximg">
+          <img
+            class="img-fluid headerSecciones__nav__img"
+            src="./assets/img/footer/logococreable2.png"
+            alt="Logo Co.creable"
+          />
+        </div>
+        <div
+          class="col-6 col-md-4 headerSecciones__nav__menu animate__animated animacion"
+        >
+          <div
+            class="headerSecciones__nav__menu__circle"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="./assets/img/header/iconoMenu.png"
+              alt="Abrir menú"
+              class="img-fluid"
+            />
+          </div>
+          <p>Menú</p>
+        </div>
+      </nav>
+      <!-- Modal Nav -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="fila fila--menu">
+              <h3>MENU</h3>
+              <h4>¿Con qué podemos ayudarte?</h4>
+            </div>
+            <button
+              class="btn fila fila--cerrar"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img
+                src="./assets/img/menu/iconoCerrar.png"
+                alt="Cerrar menú"
+                class="img-fluid"
+              />
+            </button>
+            <div class="fila fila--inicio">
+              <a href="./index.html">Inicio</a>
+            </div>
+            <div class="fila fila--proyectos fila--active">
+              <a href="./proyectos.html">Proyectos</a>
+            </div>
+            <div class="fila fila--nosotros">
+              <a href="./nosotros.html">Nosotros</a>
+            </div>
+            <div class="fila fila--servicios">
+              <a href="./servicios.html">Servicios</a>
+            </div>
+            <div class="fila fila--contacto">
+              <a href="./contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="main container-fluid">
+      <!-- Row Proyectos -->
+      <div class="row proyectos">
+        <div class="col-12 col-md-10 proyectos__titulo">
+          <h2>
+            Nuestros proyectos son diseñados con un enfoque paisajista,
+            urbanista y ecológico.
+          </h2>
+        </div>
+        <div class="col-12 proyectos__proyecto">
+          <h4
+            class="proyectos__proyecto__titulo proyectos__proyecto__titulo--amarillo"
+          >
+            CASA DE CAMPO NAUTILUS
+          </h4>
+          <ul class="proyectos__proyecto__lista">
+            <li>Tipo: Vivienda Unifamiliar</li>
+            <li>Distrito: Pachacamac</li>
+            <li>Área de lote: 1006.00 m2</li>
+            <li>Área diseñada: 250.00 m2</li>
+            <li>Arquitecta: Katia Vilcahuamán</li>
+            <li>Colaboradores: Renzo Gonzales</li>
+          </ul>
+          <p class="proyectos__proyecto__descripcion">
+            La casa Nautilus es un proyecto ecológico que permite una relación
+            con el entorno natural de las lomas de Jatosisa. Las premisas
+            arquitectónicas consideran que los elementos constructivos sean de
+            elementos reciclados y naturales. El proyecto se estructura por
+            medio de una escalera central generando una espacialidad sinuosa en
+            forma de espiral.
+          </p>
+          <div class="proyectos__proyecto__grillaDer">
+            <div class="proyectos__proyecto__grillaDer__img1">
+              <img
+                src="./assets/img/proyectos/Nautilus/Nautilus_Superior_izquierda.jpg"
+                alt="Foto Proyecto Nautilus"
+                class="img-fluid"
+              />
+            </div>
+            <div class="proyectos__proyecto__grillaDer__img2">
+              <img
+                src="./assets/img/proyectos/Nautilus/Nautilus_Superior_derecha.jpg"
+                alt="Foto Proyecto Nautilus"
+                class="img-fluid img2"
+              />
+            </div>
+            <div class="proyectos__proyecto__grillaDer__img3">
+              <img
+                src="./assets/img/proyectos/Nautilus/Nautilus_lateral_derechaalta.jpg"
+                alt="Foto Proyecto Nautilus"
+                class="img-fluid"
+              />
+            </div>
+            <div class="proyectos__proyecto__grillaDer__img4">
+              <img
+                src="./assets/img/proyectos/Nautilus/Nautilus_Inferior_izquierda.jpg"
+                alt="Foto Proyecto Nautilus"
+                class="img-fluid"
+              />
+            </div>
+            <div class="proyectos__proyecto__grillaDer__img5">
+              <img
+                src="./assets/img/proyectos/Nautilus/Nautilis_inferior_derecha.jpg"
+                alt="Foto Proyecto Nautilus"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 proyectos__proyecto">
+          <h4
+            class="proyectos__proyecto__titulo proyectos__proyecto__titulo--rojo"
+          >
+            TUYUPAY COMERCIAL
+          </h4>
+          <ul class="proyectos__proyecto__lista">
+            <li>Tipo: Puesto comercial - Croquetería</li>
+            <li>Distrito: Pueblo Libre</li>
+            <li>Área del lote: 24 m2</li>
+            <li>Área diseñada: 24 m²</li>
+            <li>Arquitectos: Alejandro Ochoa, Katia Vilcahuamán</li>
+          </ul>
+          <p class="proyectos__proyecto__descripcion">
+            El proyecto consiste en el diseño interior de una croquetería con
+            conceptos de barrio y comunidad. Se usan materiales con texturas y
+            colores coloniales para las paredes, y tableros de OSB para resaltar
+            el mobiliario principal.
+          </p>
+          <div class="row proyectos__proyecto__flex">
+            <div class="col-12 col-lg-6 proyectos__proyecto__flex__img">
+              <img
+                src="./assets/img/proyectos/Tupay/Izquierda.jpg"
+                alt="Foto Proyecto Tuyupay"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-lg-6 proyectos__proyecto__flex__img">
+              <img
+                src="./assets/img/proyectos/Tupay/Derecha.jpg"
+                alt="Foto Proyecto Tuyupay"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 proyectos__proyecto">
+          <h4
+            class="proyectos__proyecto__titulo proyectos__proyecto__titulo--cyan"
+          >
+            EDIFICIO MULTIFAMILIAR ECO-HOUSE
+          </h4>
+          <ul class="proyectos__proyecto__lista">
+            <li>Tipo: Edificio Multifamiliar 5 pisos</li>
+            <li>Distrito: San Miguel</li>
+            <li>Área de lote: 236.00 m2</li>
+            <li>Área diseñada: 713.00 m2</li>
+            <li>
+              Arquitectos: Alejandro Ochoa, Katia Vilcahuamán y Samekj Rodriguez
+            </li>
+            <li>Colaboradores: Renzo Gonzales y Karen Gutierrez</li>
+          </ul>
+          <p class="proyectos__proyecto__descripcion">
+            El proyecto Eco House Yumi se diseña a partir de lineamientos
+            ecológicos en los que prima el ahorro de energía y agua para reducir
+            los costos de mantenimiento. Siguiendo esta lógica, el edificio
+            posee un diseño moderno y minimalista, de acabados simples, con gran
+            iluminación natural, sensores de luz y paneles solares para la
+            energía de los espacios comunes. La propuesta está dirigida a un
+            público de familias jóvenes con estilo de vida ecológico.
+          </p>
+          <div class="row proyectos__proyecto__flex">
+            <div class="col-6 col-lg-3 proyectos__proyecto__flex__img">
+              <img
+                src="./assets/img/proyectos/Eco-House/Primera.jpg"
+                alt="Foto Proyecto Eco-House"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-lg-3 proyectos__proyecto__flex__img">
+              <img
+                src="./assets/img/proyectos/Eco-House/Segunda.jpg"
+                alt="Foto Proyecto Eco-House"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-lg-3 proyectos__proyecto__flex__img">
+              <img
+                src="./assets/img/proyectos/Eco-House/Tercera.jpg"
+                alt="Foto Proyecto Eco-House"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-lg-3 proyectos__proyecto__flex__img">
+              <img
+                src="./assets/img/proyectos/Eco-House/Cuarta.jpg"
+                alt="Foto Proyecto Eco-House"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 proyectos__proyecto">
+          <h4
+            class="proyectos__proyecto__titulo proyectos__proyecto__titulo--celeste"
+          >
+            PARQUE LA ESTANCIA
+          </h4>
+          <ul class="proyectos__proyecto__lista">
+            <li>Tipo: Parque barrial</li>
+            <li>Distrito: El Tambo - Huancayo</li>
+            <li>Área de lote: 5000 m2</li>
+            <li>Área diseñada: 5000 m2</li>
+            <li>
+              Arquitectos: Katia Vilcahuamán, Samekj Rodriguez, y Alejandro
+              Ochoa
+            </li>
+          </ul>
+          <p class="proyectos__proyecto__descripcion">
+            El parque La Estancia es un proyecto para la comunidad de La
+            Estancia de Huancayo. Se decide realizar una intervención al terreno
+            actual para generar espacios de reunión y calidad paisajística al
+            barrio, a través de la utilización de materiales de la zona como la
+            piedra y la vegetación vernacular.
+          </p>
+          <div class="row proyectos__proyecto__flex">
+            <div class="col-12 col-lg-4 proyectos__proyecto__flex__img">
+              <img
+                src="./assets/img/proyectos/La estancia/Estancia_Primera.jpg"
+                alt="Foto Proyecto La Estancia"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-lg-4 proyectos__proyecto__flex__img">
+              <img
+                src="./assets/img/proyectos/La estancia/Estancia_segunda.jpg"
+                alt="Foto Proyecto La Estancia"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-12 col-lg-4 proyectos__proyecto__flex__img">
+              <img
+                src="./assets/img/proyectos/La estancia/Estancia_Tercera.jpg"
+                alt="Foto Proyecto La Estancia"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid footer">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-md-4 footer__logo">
+          <img
+            src="./assets/img/footer/logococreable2.png"
+            alt="Logo Co.creable"
+            class="img-fluid footer__logo__img"
+          />
+        </div>
+        <div class="col-xs-12 col-md-4 footer__contacto">
+          <p class="footer__contacto__titulo">CONTACTO</p>
+        </div>
+        <div class="col-xs-12 col-md-4 footer__contacto__data">
+          <a href="./contacto.html" class="footer__contacto__data--link">
+            <i class="fas fa-location-arrow fa-xl"></i>
+            <p>Av. Eugenio Garzón1283 Lima 14 Jesús Maria, Peru</p>
+          </a>
+          <a
+            href="mailto:co.creable.pe@gmail.com"
+            class="footer__contacto__data--link"
+          >
+            <i class="fas fa-envelope"></i>
+            <p class="footer__contacto__data--link">Co.creable.pe@gmail.com</p>
+          </a>
+          <a
+            href="https://www.facebook.com/cocreable.pe"
+            class="footer__contacto__data--link"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-square"></i>
+            <p class="footer__contacto__data--link">Cocreable.pe</p>
+          </a>
+          <a
+            href="https://wa.me/51942190987"
+            class="footer__contacto__data--link"
+            target="_blank"
+          >
+            <i class="fa-brands fa-whatsapp-square"></i>
+            <p class="footer__contacto__data--link">+51 942 190 987</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script menú -->
+    <script src="./assets/js/tweek.js"></script>
+  </body>
+</html>
